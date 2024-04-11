@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE006F1F2BC804950045D332 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE006F1E2BC804950045D332 /* SettingsView.swift */; };
 		DE4FE7EA2BA593130049E1AB /* MultipGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4FE7E92BA593130049E1AB /* MultipGameApp.swift */; };
 		DE4FE7EC2BA593130049E1AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4FE7EB2BA593130049E1AB /* ContentView.swift */; };
 		DE4FE7EE2BA593140049E1AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE4FE7ED2BA593140049E1AB /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE006F1E2BC804950045D332 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		DE4FE7E62BA593130049E1AB /* MultipGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultipGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE4FE7E92BA593130049E1AB /* MultipGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipGameApp.swift; sourceTree = "<group>"; };
 		DE4FE7EB2BA593130049E1AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			children = (
 				DE4FE7E92BA593130049E1AB /* MultipGameApp.swift */,
 				DE4FE7EB2BA593130049E1AB /* ContentView.swift */,
+				DE006F1E2BC804950045D332 /* SettingsView.swift */,
 				DE4FE7ED2BA593140049E1AB /* Assets.xcassets */,
 				DE4FE7EF2BA593140049E1AB /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE006F1F2BC804950045D332 /* SettingsView.swift in Sources */,
 				DE4FE7EC2BA593130049E1AB /* ContentView.swift in Sources */,
 				DE4FE7EA2BA593130049E1AB /* MultipGameApp.swift in Sources */,
 			);
