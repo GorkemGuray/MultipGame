@@ -10,7 +10,7 @@ import SwiftUI
 struct SettingsView: View {
     @State private var upTo = 2
     @State private var questionNumber = 2
-    @State public var qaConf = QaConf()
+    @State private var qaConf = QaConf()
     
     @Environment(\.dismiss) var dismiss
     
@@ -18,7 +18,7 @@ struct SettingsView: View {
     
     
     var qas: Qa
-    
+    var gameState: GameState
     var body: some View {
         NavigationStack {
             Form {
@@ -42,23 +42,22 @@ struct SettingsView: View {
                 }
                 
                 Button("Start Game") {
-                    print("\(upTo+2)")
-                    print("\(questionNumber)")
-                    
                     qaConf.numberOfQuestions = questionNumber
                     qaConf.upTo = upTo + 2
-                    
                     qas.qaConf = qaConf
+                    gameState.gameIndex = 0
+                    gameState.gameScore = 0
+                    gameState.isGameActive = true
                     dismiss()
                 }
                 
             }//Form
             .navigationTitle("Settings")
         }//NavigationStack
-    }
-}
+    }//var body
+}//ContentView
 
  #Preview {
- SettingsView(qas: Qa())
+ SettingsView(qas: Qa(), gameState: GameState())
  }
  
